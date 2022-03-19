@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="71dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/coffee_shop_cell"
+    android:elevation="4dp"
+    android:paddingStart="10dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="9dp"
+    tools:ignore="RtlSymmetry">
+
+    <TextView
+        android:id="@+id/coffeeShopNameTextView"
+        style="@style/main_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BEDOEV COFFEE"
+        android:textColor="#795548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/coffeeShopDistanceTextView"
+        style="@style/second_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text=" 1 км от вас "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coffeeShopNameTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

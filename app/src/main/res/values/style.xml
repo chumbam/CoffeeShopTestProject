@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<!--    Common -->
+    <style name="main_text_color">
+
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#846340</item>
+
+    </style>
+
+    <style name="second_text_style">
+
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#AF9479</item>
+
+    </style>
+
+    <!--    FirstScreen-->
+    <style name="e_mail">
+
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#846340</item>
+        <item name="fontFamily">sans-serif</item>
+
+    </style>
+
+    <style name="password">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#846340</item>
+        <item name="fontFamily">sans-serif</item>
+
+    </style>
+
+    <style name="regButton">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#F6E5D1</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <style name="regButton_style" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/regButtonColor</item>
+    </style>
+
+    <style name="hint_style">
+
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/textHintColor</item>
+        <item name="android:textColorHint">@color/textHintColor</item>
+
+    </style>
+
+<!--    MenuListScreen-->
+    <style name="coffeeCost_style">
+
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#846340</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <style name="coffeeName_style">
+
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#AF9479</item>
+
+    </style>
+
+
+</resources>

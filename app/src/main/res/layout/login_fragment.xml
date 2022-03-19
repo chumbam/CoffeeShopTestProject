@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color"
+    tools:context=".fragment.RegisterFragment">
+
+    <!--1-->
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginBottom="7.5dp"
+        android:height="18dp"
+        android:text="@string/emailTextView_firstScree"
+        android:textAppearance="@style/e_mail"
+        app:layout_constraintBottom_toTopOf="@id/emailTextInputLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:textColorHint="@color/textHintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:hint="@string/email_hint_text"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--  2  -->
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginBottom="7.5dp"
+        android:height="18dp"
+        android:text="@string/passwordTextView_firstScreen"
+        android:textAppearance="@style/password"
+        app:layout_constraintBottom_toTopOf="@id/passwordTextInputLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:textColorHint="@color/textHintColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:hint="@string/password_hint_text"
+            android:textAppearance="@style/hint_style"
+            android:inputType="numberPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Button-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextInputLayout"
+        android:layout_marginTop="30dp"
+        android:theme="@style/regButton_style"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:text="@string/registrationButton"
+        android:textAppearance="@style/regButton"
+        android:background="@drawable/rectangle_button"
+
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

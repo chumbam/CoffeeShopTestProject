@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SWSTest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+<!--    FirstScreen-->
+    <string name="emailTextView_firstScree">e-mail</string>
+    <string name="passwordTextView_firstScreen">Пароль</string>
+    <string name="repeatPasswordTextView_firstScreen">Повторите пароль</string>
+    <string name="registrationButton">Регистрация</string>
+    <string name="email_hint_text">example@email.ru</string>
+    <string name="password_hint_text">*****</string>
+    <string name="maps_api_key">b1d232f5-fcd0-4fff-82a1-4eef1c6a2c9c</string>
+
+</resources>

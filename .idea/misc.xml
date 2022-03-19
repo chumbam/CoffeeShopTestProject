@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/drawable/coffee_shop_cell.xml" value="0.13518518518518519" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/drawable/group_2.xml" value="0.13703703703703704" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/drawable/quantity_minus_button.xml" value="0.11851851851851852" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/drawable/quantity_plus_button.xml" value="0.11851851851851852" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/drawable/rectangle.xml" value="0.2203125" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/drawable/rectangle_button.xml" value="0.13703703703703704" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/coffe_shop_list_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/coffee_shop_list_fragment.xml" value="0.25" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/coffeeshop_recycleview_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/fragment_coffee_maps.xml" value="0.20416666666666666" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/fragment_entry.xml" value="0.22" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/logging_fragment.xml" value="0.25" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/login_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/menu_list_fragment.xml" value="0.33" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/menu_recycleview_item.xml" value="0.6621621621621622" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/recycleview_item.xml" value="0.67" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/register_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/registration_fragment.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
