@@ -11,16 +11,19 @@
         <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/drawable/rectangle_button.xml" value="0.13703703703703704" />
         <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/coffe_shop_list_fragment.xml" value="0.20416666666666666" />
-        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/coffee_shop_list_fragment.xml" value="0.25" />
-        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/coffeeshop_recycleview_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/coffee_shop_list_fragment.xml" value="0.2" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/coffee_shop_maps_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/coffeeshop_recycleview_item.xml" value="0.67" />
         <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/fragment_coffee_maps.xml" value="0.20416666666666666" />
         <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/fragment_entry.xml" value="0.22" />
         <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/logging_fragment.xml" value="0.25" />
-        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/login_fragment.xml" value="0.20416666666666666" />
-        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/menu_list_fragment.xml" value="0.33" />
-        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/menu_recycleview_item.xml" value="0.6621621621621622" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/login_fragment.xml" value="0.22" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/menu_list_fragment.xml" value="0.25" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/menu_recycleview_item.xml" value="0.5" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/payment_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/payment_recycleview_item.xml" value="0.4891518737672584" />
         <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/recycleview_item.xml" value="0.67" />
-        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/register_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/register_fragment.xml" value="0.5" />
         <entry key="..\:/Programming/WorkTestProject/SWSTest/app/src/main/res/layout/registration_fragment.xml" value="0.22" />
       </map>
     </option>

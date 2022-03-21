@@ -22,7 +22,7 @@
         app:cardElevation="4dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/layout_item"
+            android:id="@+id/payment_layout_item"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/coffee_shop_cell"
@@ -34,7 +34,7 @@
             android:focusable="true">
 
             <TextView
-                android:id="@+id/coffeeShopNameTextView"
+                android:id="@+id/paymentCoffeeNameTextView"
                 style="@style/main_text_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -44,14 +44,50 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/coffeeShopDistanceTextView"
+                android:id="@+id/paymentCoffeeCostTextView"
                 style="@style/second_text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text=" 1 км от вас "
+                android:text="200 руб"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/coffeeShopNameTextView" />
+                app:layout_constraintTop_toBottomOf="@id/paymentCoffeeNameTextView" />
+
+            <ImageButton
+                android:id="@+id/paymentQuantityPlusButton"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginEnd="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/payment_quantity_plus"
+                app:layout_constraintBottom_toBottomOf="@id/paymentCoffeeCountTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/paymentCoffeeCountTextView" />
+
+
+            <TextView
+                android:id="@+id/paymentCoffeeCountTextView"
+                style="@style/coffeeCost_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="10dp"
+                android:text="0"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/paymentQuantityPlusButton"
+                />
+
+            <ImageButton
+                android:id="@+id/paymentQuantityMinusButton"
+                android:layout_width="14dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="14dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/payment_quantity_minus"
+                app:layout_constraintBottom_toBottomOf="@id/paymentCoffeeCountTextView"
+                app:layout_constraintEnd_toStartOf="@id/paymentCoffeeCountTextView"
+                app:layout_constraintTop_toTopOf="@id/paymentCoffeeCountTextView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>

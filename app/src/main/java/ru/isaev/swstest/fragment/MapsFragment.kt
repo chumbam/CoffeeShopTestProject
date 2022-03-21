@@ -13,7 +13,7 @@ import com.yandex.mapkit.map.CameraPosition
 import ru.isaev.swstest.R
 import ru.isaev.swstest.databinding.CoffeeShopMapsFragmentBinding
 
-class CoffeeShopMapsFragment : Fragment() {
+class MapsFragment : Fragment() {
 
     private lateinit var mBinding: CoffeeShopMapsFragmentBinding
 
@@ -35,11 +35,12 @@ class CoffeeShopMapsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         mBinding.map.map.move(
             CameraPosition(Point(43.598649, 39.732887), 11.0f, 0.0f, 0.0f),
             Animation(Animation.Type.SMOOTH, 0F), null
+
         )
+
     }
 
     override fun onStart() {

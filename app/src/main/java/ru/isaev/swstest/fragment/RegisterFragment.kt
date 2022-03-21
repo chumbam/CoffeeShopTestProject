@@ -17,7 +17,7 @@ import ru.isaev.swstest.helper.showToast
 @AndroidEntryPoint
 class RegisterFragment : Fragment() {
 
-    private val viewModel: RegistrationViewModel by viewModels<RegistrationViewModel>()
+    private val viewModel: RegistrationViewModel by viewModels()
     private lateinit var mBinding: RegisterFragmentBinding
 
     override fun onCreateView(
@@ -45,11 +45,14 @@ class RegisterFragment : Fragment() {
 
     private fun userRegister(viewModel: RegistrationViewModel) {
         mBinding.emailEditText.addTextChangedListener(AppTextWatcher {
-            viewModel.user.email = mBinding.emailEditText.text.toString()
-
+            if (mBinding.passwordEditText.text.toString().isNotEmpty()) {
+                viewModel.user.email = mBinding.emailEditText.text.toString()
+            }
         })
         mBinding.passwordEditText.addTextChangedListener(AppTextWatcher {
-            viewModel.user.password = mBinding.passwordEditText.text.toString().toInt()
+            if (mBinding.passwordEditText.text.toString().isNotEmpty()) {
+                viewModel.user.password = mBinding.passwordEditText.text.toString().toInt()
+            }
         }
         )
     }

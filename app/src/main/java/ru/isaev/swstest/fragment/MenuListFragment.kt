@@ -1,7 +1,7 @@
 package ru.isaev.swstest.fragment
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,11 +10,12 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dagger.hilt.android.AndroidEntryPoint
-import ru.isaev.swstest.R
 import ru.isaev.swstest.adapters.CoffeeShopMenuListAdapter
+import ru.isaev.swstest.adapters.QuantityCountDelegate
 import ru.isaev.swstest.databinding.MenuListFragmentBinding
 import ru.isaev.swstest.fragment.viewmodel.MenuListViewModel
-import ru.isaev.swstest.helper.showToast
+import ru.isaev.swstest.helper.Item
+import ru.isaev.swstest.helper.getStringArg
 import kotlin.properties.Delegates
 
 @AndroidEntryPoint
@@ -23,12 +24,25 @@ class MenuListFragment : Fragment() {
     private val mAdapter = CoffeeShopMenuListAdapter()
     private val viewModel by viewModels<MenuListViewModel>()
     private lateinit var mBinding: MenuListFragmentBinding
-    var shopMenuId by Delegates.notNull<Int>()
+    var shopMenuId by Delegates.notNull<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val bundle = arguments
-        shopMenuId = bundle?.getInt("CoffeeShopId") ?: 1
+        shopMenuId = getStringArg("ID")
+        viewModel.fetchMenuListRequest(shopMenuId)
+
+        mAdapter.attachDelegate(object : QuantityCountDelegate {
+            override fun quantityPlus(name: String, count: Int) {
+                Item.menuPositionCount[name] = count
+
+            }
+
+            override fun quantityMinus(name: String, count: Int) {
+                Item.menuPositionCount[name] = count
+
+            }
+
+        })
     }
 
     override fun onCreateView(
@@ -37,18 +51,19 @@ class MenuListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         mBinding = MenuListFragmentBinding.inflate(layoutInflater)
+        val recyclerView: RecyclerView = mBinding.rvComponentMenu
+        setupAdapter(recyclerView)
         return mBinding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val recyclerView: RecyclerView = mBinding.rvComponentMenu
-        setupAdapter(recyclerView)
-        viewModel.fetchMenuListRequest(shopMenuId)
-        if(viewModel.menuListItem.value?.isNotEmpty() == true){
-            mAdapter.setData(viewModel.menuListItem.value!!)
-        } else{
-            showToast("Данные грузяться")
+
+    override fun onStart() {
+        super.onStart()
+        viewModel.menuListItem.observe(this, { data ->
+            mAdapter.setData(data)
+        })
+        mBinding.payBtn.setOnClickListener {
+            viewModel.navigateToPaymentFragment()
         }
     }
 

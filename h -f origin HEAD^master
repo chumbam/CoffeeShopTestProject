@@ -1,0 +1,11 @@
+[33mcommit 00c85fc5aaf72aaae425ff9fa487fb4c130898f6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: chumbam <mihailisaev98@yandex.ru>
+Date:   Sat Mar 19 20:43:48 2022 +0400
+
+    I made screens , implemented work with the network and a screen with a map
+
+[33mcommit e91b7295fc7c95d97274afd3f8559c4be5bb5d1e[m
+Author: chumbam <mihailisaev98@yandex.ru>
+Date:   Sat Mar 19 20:34:57 2022 +0400
+
+    move(

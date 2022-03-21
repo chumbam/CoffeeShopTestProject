@@ -8,12 +8,32 @@
     android:background="@color/layout_background_color"
     tools:context=".fragment.CoffeeShopListFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/coffeShopListToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/mainColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/coffee_shop_list_toolbar_name"
+        android:textAppearance="@style/toolbar_text_style" />
+    </androidx.appcompat.widget.Toolbar>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/recycleViewInputLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@id/buttonInputLayout"
-        android:paddingTop="8dp">
+        android:layout_height="0dp"
+        android:paddingTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/coffeShopListToolbar"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/on_maps_btn">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_component"
@@ -23,38 +43,23 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/coffeeshop_recycleview_item"/>
+            tools:listitem="@layout/coffeeshop_recycleview_item" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/buttonInputLayout"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/on_maps_btn"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="@dimen/horizontal_margin"
-        android:layout_marginTop="6dp"
         android:layout_marginEnd="@dimen/horizontal_margin"
         android:layout_marginBottom="32dp"
         android:background="@drawable/rectangle_button"
-        android:clickable="true"
-        android:focusable="true"
+        android:text="@string/coffeeShopListFragmentMapsButton"
+        android:textAppearance="@style/regButton"
+        android:theme="@style/regButton_style"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/buttonTextView"
-            android:layout_width="0dp"
-            android:layout_height="21dp"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="@string/registrationButton"
-            android:textAppearance="@style/regButton"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

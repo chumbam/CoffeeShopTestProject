@@ -8,9 +8,9 @@ import ru.isaev.swstest.models.CoffeeShopModel
 
 interface CoffeeShopApiService {
 
-    @GET("./locations")
+    @GET("/locations")
     suspend fun fetchCoffeeShopList(): Response<List<CoffeeShopModel>>
 
-    @GET("./location/{itemId}/menu")
-    suspend fun fetchCoffeeShopMenuList(@Path("itemId") userId: Int): Response<List<CoffeeShopMenu>>
+    @GET("/location/{id}/menu")
+    suspend fun fetchCoffeeShopMenuList(@Path("id") id: String): Response<List<CoffeeShopMenu>>
 }

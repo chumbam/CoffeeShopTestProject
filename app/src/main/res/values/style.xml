@@ -2,12 +2,13 @@
 <resources>
 
 
-<!--    Common -->
+    <!--    Common -->
     <style name="main_text_color">
 
         <item name="android:textSize">18sp</item>
         <item name="android:letterSpacing">-0.01</item>
         <item name="android:textColor">#846340</item>
+        <item name="android:textStyle">bold</item>
 
     </style>
 
@@ -17,6 +18,12 @@
         <item name="android:letterSpacing">-0.01</item>
         <item name="android:textColor">#AF9479</item>
 
+    </style>
+    <style name="toolbar_text_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#846340</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <!--    FirstScreen-->
@@ -38,7 +45,7 @@
     </style>
 
     <style name="regButton">
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:letterSpacing">-0.01</item>
         <item name="android:textColor">#F6E5D1</item>
         <item name="fontFamily">sans-serif</item>
@@ -57,7 +64,7 @@
 
     </style>
 
-<!--    MenuListScreen-->
+    <!--    MenuListScreen-->
     <style name="coffeeCost_style">
 
         <item name="android:textSize">14sp</item>
@@ -66,6 +73,7 @@
         <item name="android:textStyle">bold</item>
 
     </style>
+
     <style name="coffeeName_style">
 
         <item name="android:textSize">15sp</item>
@@ -74,5 +82,12 @@
 
     </style>
 
+    <!--    PaymentScreen-->
+    <style name="payment_wait_textView_style">
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">#846340</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
 </resources>

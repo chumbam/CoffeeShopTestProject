@@ -10,5 +10,16 @@
     <string name="email_hint_text">example@email.ru</string>
     <string name="password_hint_text">*****</string>
     <string name="maps_api_key">b1d232f5-fcd0-4fff-82a1-4eef1c6a2c9c</string>
+    <string name="payment_waiting_time_textView">Время ожидания заказа 15 минут! Спасибо, что выбрали нас!</string>
+    <string name="payment_button">Оплатить</string>
+    <string name="coffeeShopListFragmentMapsButton">На карте</string>
+    <string name="login_toolbar_name">Вход</string>
+    <string name="register_toolbar_name">Регистрация</string>
+    <string name="coffee_shop_list_toolbar_name">Ближайщие кофейни</string>
+    <string name="maps_toolbar">Карта</string>
+    <string name="menu_list_toolbar">Меню</string>
+    <string name="payment_tollbar">Ваш заказ</string>
+    <string name="toPaymentButton">Перейти к оплате</string>
+    <string name="loginButton">Войти</string>
 
 </resources>

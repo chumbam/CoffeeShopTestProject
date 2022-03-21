@@ -13,11 +13,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/layout_background_color"
-    tools:context=".fragment.CoffeeShopMapsFragment">
+    tools:context=".fragment.MapsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mapsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/mainColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/maps_toolbar"
+            android:textAppearance="@style/toolbar_text_style" />
+    </androidx.appcompat.widget.Toolbar>
 
     <com.yandex.mapkit.mapview.MapView
         android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:apiKey="@string/maps_api_key"/>
+        android:apiKey="@string/maps_api_key"
+        app:layout_constraintTop_toBottomOf="@id/mapsToolbar"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

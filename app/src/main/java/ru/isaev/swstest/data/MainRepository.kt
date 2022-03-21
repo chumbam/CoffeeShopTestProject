@@ -12,6 +12,6 @@ class MainRepository @Inject constructor(private val remoteData: MainRemoteData)
     suspend fun registerApp(model: AuthModelRequest) = remoteData.registerApp(model)
 
     suspend fun getCoffeeShopList() = remoteData.getCoffeeShopList()
-    suspend fun getMenuList(shopId: Int) = remoteData.getMenuList(shopId)
+    suspend fun getMenuList(shopId: String) = remoteData.getMenuList(shopId)
 
 }
